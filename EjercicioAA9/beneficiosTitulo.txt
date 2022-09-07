@@ -1,0 +1,12 @@
+Titulo: DARK SOULS 3 | Unidades vendidas: 10000 | Beneficios: 50000.0
+---------------------------------
+Titulo: THE LAST OF US | Unidades vendidas: 50000 | Beneficios: 500000.0
+---------------------------------
+Titulo: FIFA 2022 | Unidades vendidas: 60000 | Beneficios: 900000.0
+---------------------------------
+Titulo: MARIO BROSS | Unidades vendidas: 45000 | Beneficios: 45000.0
+---------------------------------
+Titulo: DOOM 2 | Unidades vendidas: 100000 | Beneficios: 100000.0
+---------------------------------
+Titulo: FORZA HORIZON | Unidades vendidas: 50000 | Beneficios: 250000.0
+---------------------------------

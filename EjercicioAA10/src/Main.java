@@ -15,7 +15,7 @@ public class Main {
 			
 			System.out.print("Por favor, introduzca su nombre: ");
 			String nombre = scan.nextLine();
-			System.out.print("Bienvenid@ a la consulta del tiempo, " + nombre + ". ");
+			System.out.print("Bienvenid@ a la consulta del tiempo de su ciudad, " + nombre + ". ");
 			
 			HttpURLConnection con = (HttpURLConnection) url.openConnection();
 			con.connect();

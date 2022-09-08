@@ -5,7 +5,7 @@ pipeline{
     stage("fecha"){
       steps{
         script{
-           println dia.format("yyyy/MM/dd")
+           println dia.format("dd/MM/yyyy")
         }
       }
     }

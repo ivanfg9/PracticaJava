@@ -5,7 +5,7 @@ pipeline{
     stage("fecha"){
       steps{
         script{
-           println dia.format("yyyyMMdd")
+           println dia.format("yyyy/MM/dd")
         }
       }
     }
@@ -13,7 +13,7 @@ pipeline{
       steps{
         script{
           if(dia.getDay() == "Thursday"){
-            echo "¿Qué le menciona una IP a otra? — ¿Qué tramas?."
+            println "¿Qué le menciona una IP a otra? — ¿Qué tramas?."
           }
         }
       }
@@ -22,7 +22,7 @@ pipeline{
       steps{
         script{
           if(dia.getDay() == "Friday"){
-            echo "Podríamos tener otro hijo? Sí, a mí tampoco me gusta el que tenemos."
+            println "Podríamos tener otro hijo? Sí, a mí tampoco me gusta el que tenemos."
           }
         }
       }
@@ -31,7 +31,7 @@ pipeline{
       steps{
         script{
           if(dia.getDay() == "Monday"){
-            echo "¿Cómo se llama el peor jugador japonés? Nikito Nitoko."
+            println "¿Cómo se llama el peor jugador japonés? Nikito Nitoko."
           }
         }
       }
@@ -40,7 +40,7 @@ pipeline{
       steps{
         script{
           if(dia.getDay() == "Tuesday"){
-            echo "Le he pedido a mi marido que me llevase a ver LOS MISERABLES y hemos estado una hora sentados frente a la puerta del Congreso de los Diputados."
+            println "Le he pedido a mi marido que me llevase a ver LOS MISERABLES y hemos estado una hora sentados frente a la puerta del Congreso de los Diputados."
           }
         }
       }
@@ -49,7 +49,7 @@ pipeline{
       steps{
         script{
           if(dia.getDay() == "Wednesday"){
-            echo "Tengo tres llamadas perdidas de mi oftalmólogo... El de ver me llama."
+            println "Tengo tres llamadas perdidas de mi oftalmólogo... El de ver me llama."
           }
         }
       }

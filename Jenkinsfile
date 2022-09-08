@@ -12,7 +12,7 @@ pipeline{
     stage("informatico"){
       steps{
         script{
-          if(dia.getDay() == "Thursday"){
+          if(dia.getDay() == 4){
             println "¿Qué le menciona una IP a otra? — ¿Qué tramas?."
           }
         }
@@ -21,7 +21,7 @@ pipeline{
     stage("humor negro"){
       steps{
         script{
-          if(dia.getDay() == "Friday"){
+          if(dia.getDay() == 5){
             println "Podríamos tener otro hijo? Sí, a mí tampoco me gusta el que tenemos."
           }
         }
@@ -30,7 +30,7 @@ pipeline{
     stage("futbol"){
       steps{
         script{
-          if(dia.getDay() == "Monday"){
+          if(dia.getDay() == 0){
             println "¿Cómo se llama el peor jugador japonés? Nikito Nitoko."
           }
         }
@@ -39,7 +39,7 @@ pipeline{
     stage("politica"){
       steps{
         script{
-          if(dia.getDay() == "Tuesday"){
+          if(dia.getDay() == 1){
             println "Le he pedido a mi marido que me llevase a ver LOS MISERABLES y hemos estado una hora sentados frente a la puerta del Congreso de los Diputados."
           }
         }
@@ -48,7 +48,7 @@ pipeline{
     stage("medicos"){
       steps{
         script{
-          if(dia.getDay() == "Wednesday"){
+          if(dia.getDay() == 2){
             println "Tengo tres llamadas perdidas de mi oftalmólogo... El de ver me llama."
           }
         }

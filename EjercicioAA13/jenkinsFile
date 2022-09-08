@@ -3,8 +3,9 @@ pipeline {
 		stage("Build") {
 			steps {
 				script {
-					def dia = new LocalDate()
-					println "Hola Mundo! EL día de hoy es ${dia}. Este curso me hizo aprender muchísimo sobre Java"
+					def dia = new Date()
+					def fecha = dia.format("dd-MM-yyyy")
+					println "Hola Mundo! EL día de hoy es ${fecha}. Este curso me hizo aprender muchísimo sobre Java"
 				}
 			}
 		}

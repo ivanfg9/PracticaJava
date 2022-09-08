@@ -72,8 +72,9 @@ public class Main {
 			jenkinsFile.add("		stage(\"Build\") {");
 			jenkinsFile.add("			steps {");
 			jenkinsFile.add("				script {");
-			jenkinsFile.add("					def dia = new LocalDate()");
-			jenkinsFile.add("					println \"Hola Mundo! EL día de hoy es ${dia}. Este curso me hizo aprender muchísimo sobre Java\"");
+			jenkinsFile.add("					def dia = new Date()");
+			jenkinsFile.add("					def fecha = dia.format(\"dd-MM-yyyy\")");
+			jenkinsFile.add("					println \"Hola Mundo! EL día de hoy es ${fecha}. Este curso me hizo aprender muchísimo sobre Java\"");
 			jenkinsFile.add("				}");
 			jenkinsFile.add("			}");
 			jenkinsFile.add("		}");

@@ -68,6 +68,7 @@ public class Main {
 			List<String> jenkinsFile = new ArrayList<>();
 			
 			jenkinsFile.add("pipeline{");
+			jenkinsFile.add("	agent any");
 			jenkinsFile.add("	stages{");
 			jenkinsFile.add("		stage(\"Build\"){");
 			jenkinsFile.add("			steps{");

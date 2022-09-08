@@ -67,11 +67,11 @@ public class Main {
 			Path ruta = Paths.get(nombreArchivo);
 			List<String> jenkinsFile = new ArrayList<>();
 			
-			jenkinsFile.add("pipeline {");
-			jenkinsFile.add("	stages {");
-			jenkinsFile.add("		stage(\"Build\") {");
-			jenkinsFile.add("			steps {");
-			jenkinsFile.add("				script {");
+			jenkinsFile.add("pipeline{");
+			jenkinsFile.add("	stages{");
+			jenkinsFile.add("		stage(\"Build\"){");
+			jenkinsFile.add("			steps{");
+			jenkinsFile.add("				script{");
 			jenkinsFile.add("					def dia = new Date()");
 			jenkinsFile.add("					def fecha = dia.format(\"dd-MM-yyyy\")");
 			jenkinsFile.add("					println \"Hola Mundo! EL día de hoy es ${fecha}. Este curso me hizo aprender muchísimo sobre Java\"");

@@ -1,8 +1,8 @@
-pipeline {
-	stages {
-		stage("Build") {
-			steps {
-				script {
+pipeline{
+	stages{
+		stage("Build"){
+			steps{
+				script{
 					def dia = new Date()
 					def fecha = dia.format("dd-MM-yyyy")
 					println "Hola Mundo! EL día de hoy es ${fecha}. Este curso me hizo aprender muchísimo sobre Java"

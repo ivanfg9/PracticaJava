@@ -1,0 +1,10 @@
+pipeline{
+    agent any //Donde lo ejecuta. Linux? Windows?
+    stages{
+      stage("Pre build"){
+            steps{
+                echo "Hola Mundo!"
+            }
+        }
+    }
+}

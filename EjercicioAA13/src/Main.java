@@ -26,7 +26,7 @@ public class Main {
 		nuevasPeliculas.add(new Pelicula("Furious 7", 1515341399));
 		
 		try {
-			File archivoEntrada = new File("C:\\Users\\Ivan Fernandez\\Documentos\\Carpeta Trabajo Inicial\\EjercicioAA13\\Peliculas_11_20.txt");
+			File archivoEntrada = new File("C:\\Users\\Ivan Fernandez\\git\\PracticaJava\\EjercicioAA13\\Peliculas_11_20.txt");
 			Scanner scan = new Scanner(archivoEntrada);
 			
 			while(scan.hasNext()) {
@@ -55,7 +55,7 @@ public class Main {
 			Path rutaSalida = Paths.get(nombreSalida);
 			List<String> salida = new ArrayList<>();
 			
-			salida.add("Top 20 películas con más recaudación de la historia");
+			salida.add("Top 20 películas con más recaudación de la historia.");
 			int i=1;
 			for(Pelicula p:peliculas) {
 				salida.add(i + ") Titulo: " + p.getTitulo() + " | Recaudación: " + p.getRecaudacion());

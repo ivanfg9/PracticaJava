@@ -1,0 +1,21 @@
+Top 20 películas con más recaudación de la historia
+1) Titulo: Avatar | Recaudación: 2.098397339E9
+2) Titulo: Avengers: Endgame | Recaudación: 2.097501328E9
+3) Titulo: Titanic | Recaudación: 2.070647264E9
+4) Titulo: Star Wars: Episode VII - The Force Awakens | Recaudación: 2.0695217E9
+5) Titulo: Avengers: Infinity War | Recaudación: 2.048359754E9
+6) Titulo: Spider-Man: No Way Home | Recaudación: 1.910675428E9
+7) Titulo: Jurassic World | Recaudación: 1.671537444E9
+8) Titulo: The Lion King | Recaudación: 1.663250487E9
+9) Titulo: The Avengers | Recaudación: 1.518815515E9
+10) Titulo: Furious 7 | Recaudación: 1.515341399E9
+11) Titulo: Frozen II  | Recaudación: 1.450026933E9
+12) Titulo: Top Gun: Maverick  | Recaudación: 1.442160961E9
+13) Titulo: Avengers: Age of Ultron  | Recaudación: 1.40280954E9
+14) Titulo: Black Panther  | Recaudación: 1.347597973E9
+15) Titulo: Harry Potter and the Deathly Hallows: Part 2  | Recaudación: 1.342359942E9
+16) Titulo: Star Wars: Episode VIII - The Last Jedi  | Recaudación: 1.33269883E9
+17) Titulo: Jurassic World: Fallen Kingdom  | Recaudación: 1.310466296E9
+18) Titulo: Frozen  | Recaudación: 1.2815081E9
+19) Titulo: Beauty and the Beast  | Recaudación: 1.27357622E9
+20) Titulo: Incredibles 2  | Recaudación: 1.243089244E9

@@ -1,0 +1,12 @@
+pipeline {
+	stages {
+		stage("Build") {
+			steps {
+				script {
+					def dia = new LocalDate()
+					println "Hola Mundo! EL día de hoy es ${dia}. Este curso me hizo aprender muchísimo sobre Java"
+				}
+			}
+		}
+	}
+}

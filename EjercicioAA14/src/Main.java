@@ -63,7 +63,7 @@ public class Main {
 			jenkinsFile.add("			steps{");
 			jenkinsFile.add("				script{");
 			
-			String muestraJenkins = "					println \"Nombre	CANTIDAD PRODUCIDA\r\n";
+			String muestraJenkins = "					println \"Nombre	CANTIDAD PRODUCIDA\"";
 			int cantidadProducida = 0;
 			for(Chocolate c:chocolates) {
 				if(c.produccionChocolate(temperaturaMax)) {
@@ -72,11 +72,11 @@ public class Main {
 					System.out.println("Sí se ha podido producir " + c.getNombre() + " porque la temperatura es inferior a 40º (" 
 									+ temperaturaMax + ") | Cantidad producida: " + c.getCantidad());
 					cantidadProducida+=c.getCantidad();
-					muestraJenkins += "					- " + c.getNombre() + "	" + c.getCantidad() + "\r\n";
+					muestraJenkins += "					println \"- " + c.getNombre() + "	" + c.getCantidad() + "\"";
 				}
 			}
 			
-			jenkinsFile.add(muestraJenkins + "					\"");
+			jenkinsFile.add(muestraJenkins);
 			jenkinsFile.add("				}");
 			jenkinsFile.add("			}");
 			jenkinsFile.add("		}");

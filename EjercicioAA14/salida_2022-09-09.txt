@@ -1,0 +1,7 @@
+Sí se ha podido producir Chocolate Blanco porque la temperatura es inferior a 40º (36) | Cantidad producida: 1000
+Sí se ha podido producir Choclate Negro porque la temperatura es inferior a 40º (36) | Cantidad producida: 1500
+Sí se ha podido producir Chocolate con almendras porque la temperatura es inferior a 40º (36) | Cantidad producida: 1200
+Sí se ha podido producir Chocolate con castañas de caju porque la temperatura es inferior a 40º (36) | Cantidad producida: 1300
+Sí se ha podido producir Chocolate en rama porque la temperatura es inferior a 40º (36) | Cantidad producida: 100
+Sí se ha podido producir Chocolate con 70% de cacao porque la temperatura es inferior a 40º (36) | Cantidad producida: 1500
+Cantidad producida final: 6600

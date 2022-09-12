@@ -46,6 +46,8 @@ public class Main {
 			ArchivoSalida salida = new ArchivoSalida("Iván Fdez", infoCapitales);
 			salida.generarTXTSalida("jenkinsFile");
 			salida.generarTXTSalida("archivoSalida.txt");
+			
+			System.out.println("Archivos generados");
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {

@@ -17,6 +17,7 @@ public class Main {
 			
 			List<String> archivoEntrada = new ArrayList<>(servicio.cargaTxts());
 			servicio.generaArchivo(archivoEntrada);
+			
 		}catch(BeansException e) {
 			e.printStackTrace();
 		} catch (FileNotFoundException e) {

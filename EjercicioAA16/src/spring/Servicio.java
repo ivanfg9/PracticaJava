@@ -19,7 +19,13 @@ import objetos.Cancion;
 @Service
 public class Servicio {
 	
-	public void generaArchivo(List<String> archivo) throws IOException {
+private List<String> archivo;
+	
+	public Servicio() {
+		archivo = new ArrayList<>();
+	}
+	
+	public void generaArchivo() throws IOException {
 		String nombreArchivo = "archivoSalida.txt";
 		Path ruta = Paths.get(nombreArchivo);
 		List<String> archivoSalida = new ArrayList<>();
@@ -46,18 +52,14 @@ public class Servicio {
 		Files.write(ruta, archivoSalida, StandardCharsets.UTF_8);
 	}
 	
-	public List<String> cargaTxts() throws FileNotFoundException {
-		List<String> archivoCombinado = new ArrayList<>();
-		
-		archivoCombinado = generaArchivoCanciones(archivoCombinado, "C:\\Users\\Ivan Fernandez\\Documentos\\Carpeta Trabajo Inicial\\EjercicioAA16\\Canciones 2020.txt");
-		archivoCombinado = generaArchivoCanciones(archivoCombinado, "C:\\Users\\Ivan Fernandez\\Documentos\\Carpeta Trabajo Inicial\\EjercicioAA16\\Canciones 2021.txt");
-		archivoCombinado = generaArchivoArtistas(archivoCombinado, "C:\\Users\\Ivan Fernandez\\Documentos\\Carpeta Trabajo Inicial\\EjercicioAA16\\Artistas 2020.txt");
-		archivoCombinado = generaArchivoArtistas(archivoCombinado, "C:\\Users\\Ivan Fernandez\\Documentos\\Carpeta Trabajo Inicial\\EjercicioAA16\\Artistas 2021.txt");
-
-		return archivoCombinado;
+	public void cargaTxts() throws FileNotFoundException {
+		generaArchivoCanciones("C:\\Users\\Ivan Fernandez\\Documentos\\Carpeta Trabajo Inicial\\Ejercicio26\\Canciones 2020.txt");
+		generaArchivoCanciones("C:\\Users\\Ivan Fernandez\\Documentos\\Carpeta Trabajo Inicial\\Ejercicio26\\Canciones 2021.txt");
+		generaArchivoArtistas("C:\\Users\\Ivan Fernandez\\Documentos\\Carpeta Trabajo Inicial\\Ejercicio26\\Artistas 2020.txt");
+		generaArchivoArtistas("C:\\Users\\Ivan Fernandez\\Documentos\\Carpeta Trabajo Inicial\\Ejercicio26\\Artistas 2021.txt");
 	}
 	
-	private List<String> generaArchivoCanciones(List<String> archivoIni, String ruta) throws FileNotFoundException{
+	private void generaArchivoCanciones(String ruta) throws FileNotFoundException{
 		Scanner scan = new Scanner(new File(ruta),"UTF-8");
 		
 		while(scan.hasNext()) {
@@ -70,21 +72,17 @@ public class Servicio {
 			if(i<linea.length()) {
 				String titulo = linea.substring(1, linea.lastIndexOf("'"));
 				int reproducciones = Integer.valueOf(linea.substring(i));
-				archivoIni.add(titulo + "|" + reproducciones);
+				archivo.add(titulo + "|" + reproducciones);
 			}
 		}
-		
-		return archivoIni;
 	}
 	
-	private List<String> generaArchivoArtistas(List<String> archivoIni, String ruta) throws FileNotFoundException{
+	private void generaArchivoArtistas(String ruta) throws FileNotFoundException{
 		Scanner scan = new Scanner(new File(ruta),"UTF-8");
 		
 		while(scan.hasNext()) {
 			String linea = scan.nextLine();
-			archivoIni.add(linea);
+			archivo.add(linea);
 		}
-		
-		return archivoIni;
 	}
 }

@@ -15,8 +15,8 @@ public class Main {
 			AnnotationConfigApplicationContext ctx = new AnnotationConfigApplicationContext(Configuracion.class);
 			Servicio servicio = ctx.getBean(Servicio.class);
 			
-			List<String> archivoEntrada = new ArrayList<>(servicio.cargaTxts());
-			servicio.generaArchivo(archivoEntrada);
+			servicio.cargaTxts();
+			servicio.generaArchivo();
 			
 		}catch(BeansException e) {
 			e.printStackTrace();
